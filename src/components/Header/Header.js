@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
         </li>}
         <li>
-          {logInUser.email && <Link to="/cart" className="ms-0 ms-lg-4 mt-3 mt-lg-0" >
+          {logInUser.email && <Link to="/cart" className="ms-0 ms-lg-4 " >
           <div className="cartQuantity">
           {globalCart.length}
           </div>

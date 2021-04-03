@@ -28,8 +28,8 @@ const CartList = (props) => {
         <p className="card-text">Quantity : {quantity}</p>
         <p className="card-text">Price : ${price}</p>
         <p className="card-text"><small className="text-muted">Ordered in</small></p>
-        <button to="" onClick={()=>handleCheckout(_id)} className="btn btn-dark">Checkout</button>
-        <button to="" onClick={()=>handleCheckoutRemove(props.cart._id)} className="btn btn-danger ms-3">Remove Cart</button>
+        <button  style={{borderRadius:'0'}}  onClick={()=>handleCheckout(_id)}  className="btn btn-dark">Checkout</button>
+        <button style={{borderRadius:'0'}} onClick={()=>handleCheckoutRemove(props.cart._id)}  className="btn btn-danger ms-3">Remove Cart</button>
       </div>
     </div>
   </div>

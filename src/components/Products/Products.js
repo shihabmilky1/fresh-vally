@@ -19,7 +19,7 @@ const Products = (props) => {
                                 <h3>${price}</h3>
                             </div>
                             <div>
-                                <button onClick={()=>handleClick(_id)} className="btn btn-dark">Buy Now</button>
+                                <button style={{borderRadius:'0'}} onClick={()=>handleClick(_id)} className="btn btn-dark">Buy Now</button>
                             </div>
                         </div>
                     </div>

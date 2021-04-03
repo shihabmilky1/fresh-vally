@@ -44,7 +44,7 @@ const Login = () => {
         <>
      
         <div className="text-center mt-5 pt-5">
-            <button onClick={handleGoogleSingIn} style={{margin:'0 auto'}} className="btn btn-outline-dark"><FontAwesomeIcon icon={faGoogle} /> Continue With Google</button>
+            <button style={{borderRadius:'0'}} onClick={handleGoogleSingIn} style={{margin:'0 auto'}} className="btn btn-outline-dark"><FontAwesomeIcon icon={faGoogle} /> Continue With Google</button>
         </div>
         </>
     );

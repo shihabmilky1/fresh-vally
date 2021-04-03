@@ -59,8 +59,8 @@ const Checkout = () => {
                             </tbody>
                         </table>
                         <div className="ms-auto">
-                        <button onClick={()=>handleClick(id)} className="mt-3 btn btn-dark me-2">Add To Cart</button>
-                        <button onClick={()=>handleCheckout(id)} className="mt-3 btn btn-dark">Checkout</button>
+                        <button style={{borderRadius:'0'}} onClick={()=>handleClick(id)} className="mt-3 btn btn-dark me-2">Add To Cart</button>
+                        <button style={{borderRadius:'0'}} onClick={()=>handleCheckout(id)} className="mt-3 btn btn-dark">Checkout</button>
                         </div>
                     </div>
                 </div>
