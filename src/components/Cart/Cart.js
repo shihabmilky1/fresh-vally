@@ -9,6 +9,7 @@ const Cart = () => {
            <>
            <div className="container">
                <div className="row mt-5">
+                   
                {globalCart.map(cart=> <CartList cart={cart}></CartList>)}
                </div>
            </div>
