@@ -9,7 +9,7 @@ const Checkout = () => {
     const [product, setProduct] = useState({});
     const handleClick = (ids) => {
         const userCart = {cart:product,...logInUser}
-        fetch('http://localhost:5000/addCart',{
+        fetch('https://safe-brushlands-86563.herokuapp.com/addCart',{
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(userCart)
@@ -24,7 +24,7 @@ const Checkout = () => {
     }
     const { name, price, weight, quantity } = product;
     useEffect(() => {
-        fetch('http://localhost:5000/product/' + id)
+        fetch('https://safe-brushlands-86563.herokuapp.com/product/' + id)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id])

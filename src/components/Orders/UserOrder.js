@@ -3,7 +3,7 @@ import React from 'react';
 const UserOrder = (props) => {
     const {imageURL,name,quantity,price} = props.orders.orders
     const handleDelete = (id) => {
-      fetch(`http://localhost:5000/orderDelete/${id}`,{
+      fetch(`https://safe-brushlands-86563.herokuapp.com/orderDelete/${id}`,{
         method:'DELETE'
       })
       .then(res => res.json())

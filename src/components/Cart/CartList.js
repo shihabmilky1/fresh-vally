@@ -8,7 +8,7 @@ const CartList = (props) => {
       history.push(`/placeOrder/${id}`)
     }
     const handleCheckoutRemove = id => {
-      fetch(`http://localhost:5000/clearCart/${id}`,{
+      fetch(`https://safe-brushlands-86563.herokuapp.com/clearCart/${id}`,{
         method: 'DELETE'
       })
       .then(res => res.json())

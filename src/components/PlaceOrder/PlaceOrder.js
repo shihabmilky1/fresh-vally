@@ -11,7 +11,7 @@ const PlaceOrder = () => {
     const {ids} = useParams(); 
     const [order,setOrder] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/product/' + ids)
+        fetch('https://safe-brushlands-86563.herokuapp.com/product/' + ids)
         .then(res => res.json())
         .then(data => setOrder(data))
     },[])
@@ -24,7 +24,7 @@ const PlaceOrder = () => {
             orders: order,
             date: new Date()
         }
-       fetch('http://localhost:5000/placeOrder',{
+       fetch('https://safe-brushlands-86563.herokuapp.com/placeOrder',{
            method:'POST',
            headers: {'Content-Type' : 'application/json'},
            body: JSON.stringify(orders)

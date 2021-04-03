@@ -33,7 +33,7 @@ const AddProduct = () => {
                 quantity:1
             }
            if(imageURL){
-            fetch('http://localhost:5000/admin/addProduct',{
+            fetch('https://safe-brushlands-86563.herokuapp.com/admin/addProduct',{
                 method:'POST',
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify(products)

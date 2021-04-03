@@ -23,7 +23,7 @@ function App() {
  const [logInUser,setLogInUser] = useState({}) 
  const [globalCart,setGlobalCart] = useState([]) 
  useEffect(()=>{
-  fetch('http://localhost:5000/userCart?email='+ logInUser.email)
+  fetch('https://safe-brushlands-86563.herokuapp.com/userCart?email='+ logInUser.email)
   .then(res => res.json())
   .then(data => setGlobalCart(data))
 },[globalCart])

@@ -6,7 +6,7 @@ const ProductMange = (props) => {
     const {name,price,weight ,_id} = props.products;
     const history = useHistory()
     const handleDelete = id => {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://safe-brushlands-86563.herokuapp.com/delete/${id}`,{
             method:"DELETE",
         })
         .then(res => res.json())

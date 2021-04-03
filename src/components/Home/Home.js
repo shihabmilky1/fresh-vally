@@ -6,7 +6,7 @@ const Home = () => {
     const [logInUser,setLogInUser , globalCart,setGlobalCart] = useContext(UserContext);
     const [products,setProducts] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://safe-brushlands-86563.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[products])
