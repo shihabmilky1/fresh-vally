@@ -1,0 +1,29 @@
+.navbar-nav.ms-auto.hypertext a {
+    color: #fff ;
+}
+.navbar-brand{
+    color: #fff !important
+}
+.dropdown-menu{
+    border:0;
+    background: white;
+}
+.dropdown-menu li a{
+    color: black !important;
+} 
+#navbarDropdown:after{
+    display: none;
+}
+.cartQuantity {
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 110px; */
+    /* background: red; */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-top: -35px;
+    text-decoration: none;
+}
